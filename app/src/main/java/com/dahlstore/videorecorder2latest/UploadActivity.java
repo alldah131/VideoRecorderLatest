@@ -92,12 +92,6 @@ public class UploadActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                Thread myUploadTask = new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-
-                    }
-                });
                 // uploading the file to server
 //                new UploadFileToServer().execute();
                 if(!sourceFile.isFile()) {
