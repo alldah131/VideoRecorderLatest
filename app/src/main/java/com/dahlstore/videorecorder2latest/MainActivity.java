@@ -3,6 +3,7 @@ package com.dahlstore.videorecorder2latest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Environment;
@@ -43,7 +44,7 @@ public class MainActivity extends Activity {
 
         // Changing action bar background color
         // These two lines are not needed
-//        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(getResources().getString(R.color.action_bar))));
+            getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000")));
 
         btnCapturePicture = (Button) findViewById(R.id.btnCapturePicture);
         btnRecordVideo = (Button) findViewById(R.id.btnRecordVideo);
